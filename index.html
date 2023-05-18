@@ -1,0 +1,362 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ninth Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  
+
+</head>
+
+<body>
+  <div class="full_cart ">
+    <div class="upper_section mx-3 mt-3">
+      <img src="Assets/Close.png" class="mb-4 close_sign">
+      <h5 class=""> C A R T</h5>
+    </div>
+    <div class="middle_section mx-3 d-flex ">
+      <div class="float "><div class=" mt-5 d-flex justify-content-center"><p class="text-secondary">You have no items in your shopping cart</p></div></div>
+      <img src="Assets/jacket.png">
+      <div class="d-flex flex-column mx-3">
+        <h5>M O H A N</h5>
+        <p class="text-secondary ">Recycle boucle Knit cardigan beige</p>
+        <div class="d-flex justify-content-start mt-2 "><i class="fa-solid fa-plus increment_price"></i><p class="product_count mx-2 "></p><i class="fa-solid fa-minus decrement_price"></i></div>
+        <div class="price_tag">$<span class="price">120</span></div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row child_wrapper mx-3 generic_negative_margin  ">
+      <div class="d-flex flex-row mt-1">
+          <span class="text-secondary">Color</span>
+          <div class="colored_div mx-1" ></div>
+          <div class="colored_div mx-1"></div>
+          <div class="colored_div mx-1"></div>
+      </div>
+      <div class="d-flex flex-row  ml-2 mt-1" >
+        <span class="text-secondary px-1">Size</span>
+        <div data-id=1 class="size_div mx-1  ">S</div>
+        <div data-id=2 class="size_div mx-1">M</div>
+        <div data-id=3 class="size_div mx-1">L</div>
+      </div>
+    </div>
+    
+
+    <div class="lower_section mx-3 ">
+      <div class="d-flex flex-row justify-content-between border-top pt-4 mt-5 mb-3">
+        <h5> SUB TOTAL</h5> 
+        <div class="price_tag">$<span class="price">120</span>
+        </div>
+      </div>
+      <p class="text-secondary">*shipping charges, taxes and discount codes are calculated at the time of accounting. </p>
+    </div>
+
+    <div class="container third_section mt-4 ">
+      <div class="float"><p class="text-secondary">You have no items in your shopping cart</p></div>
+
+      <div class="d-flex flex-row justify-content-center align-items-center py-2">
+        <div class="cart_div mx-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+        </svg></div> 
+        <div class="buy_btn pt-2"><h5>BUY NOW</h5></div>
+
+      </div>
+
+      
+
+
+    </div>
+  </div>
+
+  <header class="">
+
+
+    <div class="icons_wrapper">
+        <div class="cart_div mx-2 mb-1"><img src="Assets/bag.svg" alt="shopping bag icon"></div>
+        <div class="search_div mx-2 mb-1"><img src="Assets/search.svg" alt="search button icon"></div>
+    </div>
+    <div class="page_logo"><img src="Assets/Logo.png"></div>
+    <div class="hamburger_toggler">
+      <div class="hamburger_line"></div>
+      <div class="hamburger_line"></div>
+      <div class="hamburger_line"></div>
+    </div>
+    <nav>
+      
+          <ul class="drop-down closed">
+          <li><a href="#" class="nav-button">New</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      
+      
+        <ul class="drop-down closed">
+        <li><a href="#" class="nav-button">Apparel</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    
+      <ul class="drop-down closed  ">
+        <li><a href="#" class="nav-button">Bag</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      
+      <ul class="drop-down closed">
+        <li><a href="#" class="nav-button">Shoes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul class="drop-down closed">
+        <li><a href="#" class="nav-button">Beauty</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul class="drop-down closed">
+        <li><a href="#" class="nav-button">Accessories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    
+  </header>
+  
+
+
+  <div class="central_carousel mt-4">
+    <div class="carousel_item "><div class="d-flex justify-content-center"><img src="Assets/jacket.png" alt="colored jacket"></div></div>
+    <div class="carousel_item "><div class="d-flex justify-content-center"><img src="Assets/jacket.png" alt="colored jacket"></div></div>
+    <div class="carousel_item "><div class="d-flex justify-content-center"><img src="Assets/jacket.png" alt="colored jacket"></div></div>
+    <div class="carousel_item "><div class="d-flex justify-content-center"><img src="Assets/jacket.png" alt="colored jacket"></div></div>
+  </div>
+
+  <div class="description_section mt-5  d-flex mb-5">
+    <div class="d-flex flex-column aligner">
+      <h5 class="mb-1 ">M O H A N</h5>
+      <p class="mb-1">recycle boucle knit cardigan beige</p>
+      <div class="price_tag">$<span class="price">120</span></div>
+      <div class="d-flex flex-row child_wrapper">
+        <div class="d-flex flex-row mt-1">
+            <span class="text-secondary">Color</span>
+            <div class="colored_div mx-1" ></div>
+            <div class="colored_div mx-1"></div>
+            <div class="colored_div mx-1"></div>
+        </div>
+        <div class="d-flex flex-row  ml-2 mt-1" >
+          <span class="text-secondary px-1">Size</span>
+          <div data-id=1 class="size_div mx-1  ">S</div>
+          <div data-id=2 class="size_div mx-1">M</div>
+          <div data-id=3 class="size_div mx-1">L</div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+    <div class="container third_section py-3">
+
+      <div class="d-flex flex-row justify-content-around px-0">
+        <div class=""><i class="fa-solid fa-plus text-light "></i><span class=" pl-2 special"> ADD TO BASKET</span></div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart text-light" viewBox="0 0 16 16">
+          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+        </svg></div>
+      </div>
+
+
+      <div class=" floater">
+        <div class="d-flex justify-content-center mt-3 "><i class="fa-solid fa-plus increment_price"></i><p class="product_count mx-2 "></p><i class="fa-solid fa-minus decrement_price"></i></div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+      var toggler=document.querySelector('.hamburger_toggler');
+      var navbar=document.querySelector('nav')
+      toggler.onclick=()=>{
+        navbar.classList.toggle('active');
+      }
+      
+
+      // carousel section##############################################
+
+      document.querySelectorAll('.central_carousel').forEach(carousel=>{
+        
+        var car_item=carousel.querySelectorAll('.carousel_item');
+        
+        
+        var car_buttons=Array.from(car_item,()=>{
+          return `<span class="h mx-1"></span>`
+         
+        })
+
+          carousel.insertAdjacentHTML("beforeend",`<div class="carousel_nav">${car_buttons.join("")}</div>`)
+
+          var car_buttons=document.querySelectorAll(".h.mx-1")
+
+          
+          car_buttons.forEach((button,i)=>{
+          button.addEventListener('click',()=>{
+            console.log(i)
+          car_item.forEach(item=>{item.classList.remove('carousel_selected')})
+          car_buttons.forEach(but=>{but.classList.remove('generic_border')})
+          
+          car_item[i].classList.add("carousel_selected")
+          
+          button.classList.add('generic_border')
+        })
+        
+        car_item[0].classList.add("carousel_selected")
+        button.classList.add('generic_border')
+      })
+      })
+
+
+      // handling the bottom section##########################
+
+      var floater=document.querySelector(".floater")
+
+      var addBasket=document.querySelector(".fa-solid.fa-plus.text-light")
+      addBasket.onclick=function(){
+        floater.style.display="block"
+      }
+
+      var product_incrementer=document.querySelectorAll(".increment_price")
+      var product_decrementer=document.querySelectorAll(".decrement_price")
+      var product_cnt=document.querySelectorAll(".product_count")
+      var counter=1;
+      var actual_price=120;
+      var price_tag=document.querySelectorAll(".price")
+        
+      product_cnt.forEach(counte=>{counte.innerHTML=counter})
+      
+      product_incrementer.forEach(increment=>{increment.onclick=()=>{counter++;
+        product_cnt.forEach(counte=>{counte.innerHTML=counter})
+        price_tag.forEach(tag=>{tag.innerHTML=actual_price*counter;})}})
+      product_decrementer.forEach(decrement=>{decrement.onclick=()=>{
+          if(counter==0){
+            floater.style.display="none"
+          }
+          else{
+            counter--
+          }
+         product_cnt.forEach(counte=>{counte.innerHTML=counter})
+         price_tag.forEach(tag=>{tag.innerHTML=actual_price*counter;})
+        }})
+
+        var size_divs=document.querySelectorAll(".size_div")
+
+        size_divs.forEach((sizeDiv)=>{
+          sizeDiv.addEventListener('click',()=>{
+            console.log(sizeDiv)
+            size_divs.forEach(div=>{div.classList.remove("selected_size")})
+            sizeDiv.classList.add("selected_size")
+          })
+        })
+
+
+        //cart section#########################################################
+        var cart_icon=document.querySelectorAll(".cart_div")[1]
+        cart_icon.onclick=()=>{
+          entire_cart.style.zIndex="10"
+          entire_cart.style.opacity="1"
+
+        }
+        var cart_terminator=document.querySelector(".close_sign")
+        var entire_cart=document.querySelector(".full_cart")
+
+        cart_terminator.onclick=function(){
+          entire_cart.style.zIndex="-1"
+          entire_cart.style.opacity="0"
+        }
+
+
+        // handling the bottom section of the cart popup##########################
+
+        $('.decrement_price').first().on("click",()=>{
+          if(counter==0){
+            document.querySelector('.buy_btn').innerHTML=`<h5>CONTINUE SHOPPING</h5>`
+            document.querySelector(".float").style.display="block"
+            
+            
+          }
+          
+        })
+
+        document.querySelectorAll(".increment_price")[1].addEventListener("click",()=>{
+          document.querySelector('.buy_btn').innerHTML=`<h5>BUY NOW</h5>`
+          if(counter>0){
+            document.querySelector(".float").style.display="none"
+          }
+        })
+
+
+
+      
+
+
+
+        
+  
+  document.querySelectorAll('.nav-button')[0].addEventListener('click', function() {
+    console.log(this.parentNode.parentNode)
+    this.parentNode.parentNode.classList.toggle('closed')
+    
+  }, false);
+
+  document.querySelectorAll('.nav-button')[1].addEventListener('click', function() {
+    console.log(this.parentNode.parentNode)
+    this.parentNode.parentNode.classList.toggle('closed')
+    
+  }, false);
+
+  document.querySelectorAll('.nav-button')[2].addEventListener('click', function() {
+    console.log(this.parentNode.parentNode)
+    this.parentNode.parentNode.classList.toggle('closed')
+    
+  }, false);
+
+  document.querySelectorAll('.nav-button')[3].addEventListener('click', function() {
+    console.log(this.parentNode.parentNode)
+    this.parentNode.parentNode.classList.toggle('closed')
+    
+  }, false);
+
+        
+
+
+
+
+      
+
+
+        
+        
+       
+      
+     
+
+      
+      
+
+      
+
+
+    </script>
+</body>
+</html>

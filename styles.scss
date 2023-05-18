@@ -11,6 +11,15 @@
     box-sizing: border-box;
 }
 
+a{
+    font-family: Tenor_regular;
+}
+
+
+.contain{
+    display: none;
+    opacity:0;
+}
 .generic_negative_margin{
     margin-top: -120px;
     margin-bottom: 100px;
@@ -186,7 +195,7 @@ header{
   height: 172px; 
   background-color: white;
   font-family: Arial;
-  width: 200px;
+  width: 300px;
   margin-left: 70px;
   padding: 0;
   text-align: center;
@@ -208,9 +217,11 @@ nav .drop-down li a {
 }
 
 nav .drop-down li:first-child a:after {
-  content: "\2304";
+  content: "\f078";
+  font: var(--fa-font-solid);
   float:right;
   margin-left: 50px;
+  color:grey;
   
 }
 
@@ -420,6 +431,50 @@ nav .drop-down li:first-child a:after {
     }
     .page_logo{
         margin-top: 5px;
+    }
+    .contain{
+        display: block;
+        opacity:1;
+    }
+
+    .tab_Content{
+        background-color: white;
+        display:none;
+
+        p{
+            text-align: center;
+            color: grey;
+        }
+        
+    }
+    
+
+    .tab_Content.active{
+        display: block;
+       
+        transition: 0.4s ease-in-out;
+    }
+
+    .tab_buttons{
+        width: 90%;
+        padding-left: 25px;
+    }
+
+    .tab_buttons button{
+        font-family: Tenor_regular;
+        border:none;
+        background-color: white;
+        font-size: large;
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 10px;
+        flex:1;
+        
+    }
+    .tab_buttons button.active{
+        border-bottom:1px solid orangered;
+        color:darkgrey;
+        transition: 0.3s;
+        
     }
 
     .hamburger_line{

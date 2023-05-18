@@ -86,50 +86,69 @@
       <div class="hamburger_line"></div>
     </div>
     <nav>
-      
+
+      <div class="contain">
+        <div class="tab_buttons d-flex justify-content-evenly">
+          <button>Women</button>
+          <button>Men</button>
+          <button>Kids</button>
+        </div>
+  
+        <div class="tab_body">
+          <div class="tab_Content">
+            <ul class="drop-down closed">
+              <li><a href="#" class="nav-button">New</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          
+          
+            <ul class="drop-down closed">
+            <li><a href="#" class="nav-button">Apparel</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        
+          <ul class="drop-down closed  ">
+            <li><a href="#" class="nav-button">Bag</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          
           <ul class="drop-down closed">
-          <li><a href="#" class="nav-button">New</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      
-      
-        <ul class="drop-down closed">
-        <li><a href="#" class="nav-button">Apparel</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+            <li><a href="#" class="nav-button">Shoes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
     
-      <ul class="drop-down closed  ">
-        <li><a href="#" class="nav-button">Bag</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+          <ul class="drop-down closed">
+            <li><a href="#" class="nav-button">Beauty</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+    
+          <ul class="drop-down closed">
+            <li><a href="#" class="nav-button">Accessories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          </div>
+          <div class="tab_Content"><p class="mt-5">This tab is empty</p></div>
+          <div class="tab_Content"><p class="mt-5">This tab is also empty</p></div>
+        </div>
+  
+      </div>
       
-      <ul class="drop-down closed">
-        <li><a href="#" class="nav-button">Shoes</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <ul class="drop-down closed">
-        <li><a href="#" class="nav-button">Beauty</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <ul class="drop-down closed">
-        <li><a href="#" class="nav-button">Accessories</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+          
     </nav>
+
+    
 
     
   </header>
@@ -336,6 +355,25 @@
     this.parentNode.parentNode.classList.toggle('closed')
     
   }, false);
+
+  //tab implementation#####################################
+
+  var tab_btns=document.querySelectorAll(".tab_buttons > button")
+  var all_tabs=document.querySelectorAll(".tab_Content")
+
+  tab_btns.forEach((btn,index)=>{
+    btn.addEventListener('click',function(){
+      tab_btns.forEach(single=>{single.classList.remove('active')})
+      btn.classList.toggle('active')
+      all_tabs.forEach(tab=>{tab.classList.remove('active')
+        }) 
+      all_tabs[index].classList.add('active')
+      
+      
+    })
+    all_tabs[0].classList.add('active')
+    tab_btns[0].classList.add('active')
+  })
 
         
 
